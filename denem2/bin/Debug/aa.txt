@@ -1,0 +1,2 @@
+Makine Otomatik Calýsma Sure	Uretim Baski Adedi	Yapilan Karisim Adedi	Kullanilan Cim Miktari	Kalan Cim Miktari	Paket Adedi	Harc Bekleme Sure Saat	Harc Bekleme Sure Dk	Pak Bekleme Sure Saat	Pak Bekleme Sure Dk	Palet Bekleme Sure Saat	Palet Bekleme Sure Dk	Otomatik Calisma Sure Dk
+0	0	0	0	0	0	0	0	0	0	0	0	0

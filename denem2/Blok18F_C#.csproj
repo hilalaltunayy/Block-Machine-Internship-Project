@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95C4EC48-7102-4B3A-A4A0-737404567DE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>denem2</RootNamespace>
+    <AssemblyName>denem2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=27.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.27.2.1\lib\net47\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net40\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LINQtoCSV, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINQtoCSV.1.5.0.0\lib\net35\LINQtoCSV.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.0.0\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.0\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>..\..\..\..\..\..\2020proje\libforc#\csharpui.comXanderUiDemo-master\XanderUiDemo-master\XanderUiDemo\bin\Debug\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aaaaa.cs" />
+    <Compile Include="Alarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alarm.Designer.cs">
+      <DependentUpon>Alarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmSüreleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmSüreleri.Designer.cs">
+      <DependentUpon>AlarmSüreleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALLAlarmListClass.cs" />
+    <Compile Include="AlltagList.cs" />
+    <Compile Include="AltKalip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltKalip.Designer.cs">
+      <DependentUpon>AltKalip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnalogClock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnalogClock.Designer.cs">
+      <DependentUpon>AnalogClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonWTags.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CatalAcmaParametreleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalAcmaParametreleri.Designer.cs">
+      <DependentUpon>CatalAcmaParametreleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar.cs" />
+    <Compile Include="Elemanlar\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafik.Designer.cs">
+      <DependentUpon>Grafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HarcTeknesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HarcTeknesi.Designer.cs">
+      <DependentUpon>HarcTeknesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hidrolik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hidrolik.Designer.cs">
+      <DependentUpon>Hidrolik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IticiParametreleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IticiParametreleri.Designer.cs">
+      <DependentUpon>IticiParametreleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kalibrasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kalibrasyon.Designer.cs">
+      <DependentUpon>Kalibrasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mikser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mikser.Designer.cs">
+      <DependentUpon>Mikser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mikser_Parametreleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mikser_Parametreleri.Designer.cs">
+      <DependentUpon>Mikser_Parametreleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operator.Designer.cs">
+      <DependentUpon>Operator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OzelButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaketlemeTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaketlemeTest.Designer.cs">
+      <DependentUpon>PaketlemeTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Palet1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Palet1.Designer.cs">
+      <DependentUpon>Palet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Palet3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Palet3.Designer.cs">
+      <DependentUpon>Palet3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PressOransalAyar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PressOransalAyar.Designer.cs">
+      <DependentUpon>PressOransalAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recete.Designer.cs">
+      <DependentUpon>Recete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recete_Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recete_Giris.Designer.cs">
+      <DependentUpon>Recete_Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenController.cs" />
+    <Compile Include="ShapedButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sharp7.cs" />
+    <Compile Include="Sistem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem.Designer.cs">
+      <DependentUpon>Sistem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToplamaOransal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToplamaOransal.Designer.cs">
+      <DependentUpon>ToplamaOransal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToplamaParametreleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToplamaParametreleri.Designer.cs">
+      <DependentUpon>ToplamaParametreleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToplamaYuk-Asg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToplamaYuk-Asg.Designer.cs">
+      <DependentUpon>ToplamaYuk-Asg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UstKalip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UstKalip.Designer.cs">
+      <DependentUpon>UstKalip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uyari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyari.Designer.cs">
+      <DependentUpon>Uyari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vardiya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vardiya.Designer.cs">
+      <DependentUpon>Vardiya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vibrasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vibrasyon.Designer.cs">
+      <DependentUpon>Vibrasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WriteTag.cs" />
+    <EmbeddedResource Include="Alarm.resx">
+      <DependentUpon>Alarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmSüreleri.resx">
+      <DependentUpon>AlarmSüreleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltKalip.resx">
+      <DependentUpon>AltKalip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalAcmaParametreleri.resx">
+      <DependentUpon>CatalAcmaParametreleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafik.resx">
+      <DependentUpon>Grafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HarcTeknesi.resx">
+      <DependentUpon>HarcTeknesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hidrolik.resx">
+      <DependentUpon>Hidrolik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IticiParametreleri.resx">
+      <DependentUpon>IticiParametreleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kalibrasyon.resx">
+      <DependentUpon>Kalibrasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mikser.resx">
+      <DependentUpon>Mikser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mikser_Parametreleri.resx">
+      <DependentUpon>Mikser_Parametreleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operator.resx">
+      <DependentUpon>Operator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaketlemeTest.resx">
+      <DependentUpon>PaketlemeTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Palet1.resx">
+      <DependentUpon>Palet1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Palet3.resx">
+      <DependentUpon>Palet3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PressOransalAyar.resx">
+      <DependentUpon>PressOransalAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recete.resx">
+      <DependentUpon>Recete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recete_Giris.resx">
+      <DependentUpon>Recete_Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem.resx">
+      <DependentUpon>Sistem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToplamaOransal.resx">
+      <DependentUpon>ToplamaOransal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToplamaParametreleri.resx">
+      <DependentUpon>ToplamaParametreleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToplamaYuk-Asg.resx">
+      <DependentUpon>ToplamaYuk-Asg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UstKalip.resx">
+      <DependentUpon>UstKalip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uyari.resx">
+      <DependentUpon>Uyari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vardiya.resx">
+      <DependentUpon>Vardiya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vibrasyon.resx">
+      <DependentUpon>Vibrasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\makine21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conveyor-belt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\force.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gauge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joystick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fonta.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\an1.png" />
+    <None Include="Resources\difa_18LI MAKINE2.png" />
+    <Content Include="Resources\left-arrow.png" />
+    <Content Include="Resources\right-arrow.png" />
+    <None Include="Resources\worker.png" />
+    <Content Include="Resources\x-button.png" />
+    <None Include="Resources\clock1.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\silo-removebg-preview.png" />
+    <None Include="Resources\an31.png" />
+    <None Include="Resources\an21.png" />
+    <None Include="Resources\an11.png" />
+    <Content Include="Resources\an2.png" />
+    <Content Include="Resources\an3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
