@@ -1,3 +1,16 @@
+## Demo Preview
+
+### Main Screen
+![Main Screen](main-screen.png)
+
+### Animated Demo
+![Demo GIF](demo.gif)
+
+### Additional Screen
+![Monitoring Screen](second-screen.png)
+
+---
+
 # Mini SCADA-Inspired Industry 4.0 Desktop Application
 
 This project is a desktop application developed as part of my internship work.
@@ -189,18 +202,6 @@ In this sense, the project reflects the logic of smart manufacturing systems and
 
 ---
 
-## Demo Preview
-
-### Main Screen
-![Main Screen](main-screen.png)
-
-### Animated Demo
-![Demo GIF](demo.gif)
-
-### Additional Screen
-![Monitoring Screen](second-screen.png)
-
----
 
 ## Screenshots
 
