@@ -9,6 +9,9 @@
 ### Additional Screen
 ![Monitoring Screen](second-screen.png)
 
+### Additional Screen
+![Monitoring Screen](third-screen.png)
+
 ---
 
 # Mini SCADA-Inspired Industry 4.0 Desktop Application
