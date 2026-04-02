@@ -192,13 +192,13 @@ In this sense, the project reflects the logic of smart manufacturing systems and
 ## Demo Preview
 
 ### Main Screen
-![Main Screen](images/main-screen.png)
+![Main Screen](main-screen.png)
 
 ### Animated Demo
-![Demo GIF](images/demo.gif)
+![Demo GIF](demo.gif)
 
 ### Additional Screen
-![Monitoring Screen](images/second-screen.png)
+![Monitoring Screen](second-screen.png)
 
 ---
 
